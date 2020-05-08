@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.warren.pojo.Address">
+        <property name="address" value="南京市鼓楼区"/>
+    </bean>
+
+    <bean id="student" class="com.warren.pojo.Student">
+        <!--第一种，普通值注入，value-->
+        <property name="name" value="warren"/>
+        <!--第二种，Bean注入，ref-->
+        <property name="address" ref="address"/>
+        <!--数组注入-->
+        <property name="books">
+            <array>
+                <value>活着</value>
+                <value>三国演义</value>
+                <value>西游记</value>
+            </array>
+        </property>
+        <!--List-->
+        <property name="hobbys">
+            <list>
+                <value>篮球</value>
+                <value>英雄联盟</value>
+                <value>听歌</value>
+                <value>coding</value>
+            </list>
+        </property>
+        <!--Map-->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="420704199706171111"></entry>
+                <entry key="手机卡" value="15623356861"></entry>
+            </map>
+        </property>
+        <!--Set-->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>COC</value>
+                <value>CSS</value>
+            </set>
+        </property>
+        <!--null-->
+        <property name="wife">
+            <null/>
+        </property>
+        <!--Properties-->
+        <property name="info">
+            <props>
+                <prop key="学号">201542401222</prop>
+                <prop key="url">www.warren.run</prop>
+                <prop key="driver">db</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

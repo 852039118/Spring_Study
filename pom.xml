@@ -10,6 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-01-ioc1</module>
+        <module>spring-02-hellospring</module>
+        <module>spring-03-ioc2</module>
+        <module>spring-04-di</module>
+        <module>spring-05-autowired</module>
+        <module>spring-06-anno</module>
+        <module>spring-07-appconfig</module>
     </modules>
 
     <dependencies>
@@ -25,6 +31,10 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.6.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
     </dependencies>
 </project>
