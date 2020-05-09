@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Import;
 //@Configuration表示这是一个配置类，就和我们之前配置的applicationContext.xml和beans.xml
 @Configuration
 @ComponentScan("com.warren.pojo")
-@Import(WarrenConfig2.class)
+@Import(WarrenConfig2.class)    //可以import多个别的配置
 public class WarrenConfig {
 
     //注册一个bean，就相当于我们之前写的一个bean标签
